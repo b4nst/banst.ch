@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<ul>
+  {% for page in section.pages %}
+  <li class="blog-item">
+    <div>
+      <span class="bullet">> : </span> 
+      <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+    </div>
+    <span class="date">{{ page.date }}</span>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock content %}

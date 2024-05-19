@@ -1,0 +1,32 @@
+// Header bar styles
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 66px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+  border-bottom: 1px dotted #444;
+}
+
+.profile {
+  padding: 0 20px;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.header nav {
+  text-align: right;
+  padding: 0 20px;
+}
+
+.header a {
+  margin: 0 10px;
+  color: #fff;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>banst</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<!--
+
+██████╗  █████╗ ███╗   ██╗███████╗████████╗
+██╔══██╗██╔══██╗████╗  ██║██╔════╝╚══██╔══╝
+██████╔╝███████║██╔██╗ ██║███████╗   ██║   
+██╔══██╗██╔══██║██║╚██╗██║╚════██║   ██║   
+██████╔╝██║  ██║██║ ╚████║███████║   ██║   
+╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   
+
+-->                         
+
+<body>
+
+  <header class="header">
+    <div class="profile">
+      <img src="/asset/profile.jpg" alt="Profile picture">
+      <span>><span class="blinking">_</span></span>
+    </div>
+    <nav>
+      <a href="/">HOME</a>
+      <span> \ </span>
+      <a href="/about">ABOUT</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      {% block content %} {% endblock %}
+    </div>
+  </section>
+</body>
+
+</html>

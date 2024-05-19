@@ -1,0 +1,64 @@
+$bg-color: #222;
+$text-color: #ddd;
+$highlight-color: #fff;
+
+@import "header";
+
+@keyframes blink {
+  50% {
+    opacity: 0; /* This makes the character/text invisible */
+  }
+}
+
+body {
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: "JetBrains Mono", monospace;
+  text-align: justify;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+h1 {
+  color: $highlight-color;
+}
+
+h2 {
+  margin-top: 2em;
+  color: $highlight-color;
+}
+
+// Link styles
+
+a {
+  text-decoration: none;
+  color: $highlight-color;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.blog-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  text-align: -webkit-match-parent;
+  font-size: 1.6em;
+}
+
+.blog-item .date {
+  font-size: 0.7em;
+  font-style: italic;
+  color: #888;
+  text-align: right;
+}
+
+.blinking {
+  animation: blink 1s 5;
+}
